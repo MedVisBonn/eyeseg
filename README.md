@@ -1,4 +1,6 @@
+[![PyPI version](https://badge.fury.io/py/eyesegpy.svg)](https://badge.fury.io/py/eyesegpy)
 # eyeseg
+
 eyeseg is a command line application to segment OCT layers and quantify drusen. It can read and process Spectralis XML and VOL exports. Models used for OCT layer segmentation might give unexpected results on data from other devices than Spectralis.
 
 ## Installation
@@ -65,6 +67,8 @@ eyeseg segment -t 2
 
 The output is saved as a .eye file in the specified output folder (processed/ by default). The .eye file contains layer heights and drusen segmentation. The drusen segmentation is computed with a default threshold of 2. You can change the threshold with the `-t` option.
 
+Results are stored as .eye files in the output folder. The .eye file contains the image data as well as the layer and drusen segmentations and can be loaded, visualized or further processed using the [eyepy](https://github.com/MedVisbonn/eyepy) Python package.
+
 ### Quantification with default grid
 
 ```bash
@@ -114,19 +118,11 @@ By default the first sector starts on the nasal side from the horizontal line an
 ## Citation
 
 ```bibtex
-@article{morelleAccurateDrusenSegmentation2023,
-  title = {Accurate Drusen Segmentation in Optical Coherence Tomography via Order-Constrained Regression of Retinal Layer Heights},
-  author = {Morelle, Olivier and Wintergerst, Maximilian W. M. and Finger, Robert P. and Schultz, Thomas},
-  date = {2023-05-19},
-  journaltitle = {Scientific Reports},
-  shortjournal = {Sci Rep},
-  volume = {13},
-  number = {8162},
-  publisher = {{Nature Publishing Group}},
-  issn = {2045-2322},
-  doi = {10.1038/s41598-023-35230-4},
-  issue = {1},
-  langid = {english},
-  keywords = {Biomarkers,Computational science,Computer science,Macular degeneration},}
+@article{Morelle_Accurate_drusen_segmentation_2023,
+author = {Morelle, Olivier and Wintergerst, Maximilian W. M. and Finger, Robert P. and Schultz, Thomas},
+doi = {10.1038/s41598-023-35230-4},
+journal = {Scientific Reports},
+title = {{Accurate drusen segmentation in optical coherence tomography via order-constrained regression of retinal layer heights}},
+year = {2023}
 }
 ```
