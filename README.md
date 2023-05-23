@@ -111,3 +111,17 @@ By default the first sector starts on the nasal side from the horizontal line an
 + Quantification grids for parameters `-r 1 -r 2 -r 3 -s 1 -s 4 -s 8 -o 0 -o 45, -o 45`
 
 ![](./docs/grid2.jpeg)
+
+## Citation
+
+```bibtex
+@software{Morelle_eyeseg_2023,
+author = {Morelle, Olivier},
+license = {MIT},
+month = may,
+title = {{eyeseg}},
+url = {https://github.com/MedVisBonn/eyeseg},
+version = {0.1.0},
+year = {2023}
+}
+```
