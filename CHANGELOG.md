@@ -2,6 +2,18 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.0 (2023-05-23)
+### Fix
+* **pyproject.toml:** Switch to major versioning ([`139d462`](https://github.com/MedVisBonn/eyeseg/commit/139d46267d80d9b8c1a7f6f9309bd8cf5e21a48c))
+* **pyproject.toml;-CITATION.cff:** Fix versioning ([`ca4dbab`](https://github.com/MedVisBonn/eyeseg/commit/ca4dbab76b30c50b35c1333d40fa7198517a7205))
+
+### Breaking
+*  ([`139d462`](https://github.com/MedVisBonn/eyeseg/commit/139d46267d80d9b8c1a7f6f9309bd8cf5e21a48c))
+
+### Documentation
+* **README.md;-CITATION.cff:** Add prefered citation, change from eyeseg to eyesegpy because of availability ([`7d638c0`](https://github.com/MedVisBonn/eyeseg/commit/7d638c03d95a8aac162034ba228a9464aebf821b))
+* **README:** Add bibtex reference ([`feead26`](https://github.com/MedVisBonn/eyeseg/commit/feead26cb7c3e63a5c19fb01bbd805584516bcf0))
+
 ## v0.1.0 (2023-05-23)
 ### Feature
 * **eyeseg:** Add Bioptigen model ([`8b99881`](https://github.com/MedVisBonn/eyeseg/commit/8b99881ea91a9164515156447e726f9c7d4ff7e4))
