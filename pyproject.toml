@@ -57,7 +57,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.semantic_release]
 branch = "main"
-major_on_zero = false
+major_on_zero = true
 version_variable = ['eyeseg/__init__.py:__version__']
 version_toml = "pyproject.toml:tool.poetry.version"
 version_pattern = ["CITATION.cff:v(\\d+\\.\\d+\\.\\d+)", "docker/Makefile:(\\d+\\.\\d+\\.\\d+)"]
