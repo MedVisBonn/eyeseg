@@ -27,17 +27,17 @@ Running eyeseg in a docker container on mounted data only requires a working doc
 
 For CPU only support, you can use the CPU image:
 ```bash
-docker run -u $(id -u):$(id -g) -it -v $(DATA):/home/data olcifer/eyeseg:0.3.0-cpu
+docker run -u $(id -u):$(id -g) -it -v $(DATA):/home/data olcifer/eyeseg:1.0.0-cpu
 ```
 For GPU support, you can use the GPU image:
 ```bash
-docker run -u $(id -u):$(id -g) -it --gpus=all -v $(DATA):/home/data olcifer/eyeseg:0.3.0-gpu
+docker run -u $(id -u):$(id -g) -it --gpus=all -v $(DATA):/home/data olcifer/eyeseg:1.0.0-gpu
 ```
 
 In both cases you need to mount your data to the container by replacing $(DATA) with the path to your data. Depending on whether you want to use a prebuild image or not you have to adapt the image name. The container will run as the current user and group. This is important to avoid permission issues with the mounted data. Your working directory is your mounted data.
 
 ## Requirements
-Your data has to be in the Spectralis XML or VOL export format. In case of the XML export, make sure that your data is exported with a black background and every folder contains a single volume (single XML file). There is also a model available for Bioptigen data, trained on the Duke dataset. However, Biotigen data is not that common and the model is here mainly for reproducibility of the results described in the respective publication (https://doi.org/10.1038/s41598-023-35230-4).
+Your data has to be in the Spectralis XML or VOL export format. In case of the XML export, make sure that your data is exported with a black background and every folder contains a single volume (single XML file). There is also a model available for Bioptigen data, trained on the Duke dataset. However, Bioptigen data is not that common and the model is here mainly for reproducibility of the results described in the respective publication (https://doi.org/10.1038/s41598-023-35230-4).
 
 ## Usage
 After installation via pip or starting the docker container, you can use the eyeseg command line application. You can run `eyeseg` without any arguments to see a help message.
