@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "eyeseg"
-version = "0.0.0"
+version = "0.1.0"
 description = "A python command line tool to segment drusen and retinal layers in OCT images."
 authors = ["Olivier Morelle <oli4morelle@gmail.com>"]
 
