@@ -12,17 +12,43 @@ authors:
     family-names: Morelle
     email: oli4morelle@gmail.com
     affiliation: >-
-      University of Bonn - Bonn-Aachen International
-      Center for Information Technology (b-it) /
-      University Hospital Bonn - Department of
-      Ophthalmology
+      University of Bonn - Bonn-Aachen International Center
+      for Information Technology (b-it) / University
+      Hospital Bonn - Department of Ophthalmology
     orcid: 'https://orcid.org/0000-0001-6404-2726'
-identifiers:
-  - type: doi
-    value: 10.1038/s41598-023-35230-4
-    description: The DOI of the related Scientific Reports Publication
 repository-code: 'https://github.com/MedVisBonn/eyeseg'
-abstract: >-
+keywords:
+  - OCT
+  - Layer
+  - Segmentation
+  - Drusen
+  - AMD
+  - Biomarker
+  - Spectralis
+  - BM
+  - RPE
+  - EZ
+license: MIT
+commit: 094cca0029cd8b270e99112b778d0bb0aed528cd
+version: 0.1.0
+date-released: '2023-05-22'
+preferred-citation:
+  authors:
+    - family-names: Morelle
+      given-names: Olivier
+    - family-names: Wintergerst
+      given-names: Maximilian W. M.
+    - family-names: Finger
+      given-names: Robert P.
+    - family-names: Schultz
+      given-names: Thomas
+  title: Accurate drusen segmentation in optical coherence tomography via order-constrained regression of retinal layer heights
+  type: article
+  doi: 10.1038/s41598-023-35230-4
+  date-published: "2023-05-19"
+  year: 2023
+  journal: Scientific Reports
+  abstract: >-
   Drusen are an important biomarker for age-related macular
   degeneration (AMD). Their accurate segmentation based on
   optical coherence tomography (OCT) is therefore relevant
@@ -47,18 +73,3 @@ abstract: >-
   state-of-the-art method. Given its reproducible, accurate,
   and scalable results, our method can be used for the
   large-scale analysis of OCT data.
-keywords:
-  - OCT
-  - Layer
-  - Segmentation
-  - Drusen
-  - AMD
-  - Biomarker
-  - Spectralis
-  - BM
-  - RPE
-  - EZ
-license: MIT
-commit: 094cca0029cd8b270e99112b778d0bb0aed528cd
-version: 0.1.0
-date-released: '2023-05-22'

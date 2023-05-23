@@ -5,7 +5,7 @@ eyeseg is a command line application to segment OCT layers and quantify drusen. 
 You can install `eyeseg` with pip. Use a virtual environment to avoid conflicts with other packages.
 
 ```bash
-pip install eyeseg
+pip install eyesegpy
 ```
 
 For GPU access you might have to install additional dependencies such as the CUDA Toolkit and cuDNN. Predictions using only the CPU are possible but a lot slower. A convenient alternative to installing additional depencies is to use our docker image. See the section "Docker" for more information.
@@ -111,17 +111,22 @@ By default the first sector starts on the nasal side from the horizontal line an
 + Quantification grids for parameters `-r 1 -r 2 -r 3 -s 1 -s 4 -s 8 -o 0 -o 45, -o 45`
 
 ![](./docs/grid2.jpeg)
-
 ## Citation
 
 ```bibtex
-@software{Morelle_eyeseg_2023,
-author = {Morelle, Olivier},
-license = {MIT},
-month = may,
-title = {{eyeseg}},
-url = {https://github.com/MedVisBonn/eyeseg},
-version = {0.1.0},
-year = {2023}
+@article{morelleAccurateDrusenSegmentation2023,
+  title = {Accurate Drusen Segmentation in Optical Coherence Tomography via Order-Constrained Regression of Retinal Layer Heights},
+  author = {Morelle, Olivier and Wintergerst, Maximilian W. M. and Finger, Robert P. and Schultz, Thomas},
+  date = {2023-05-19},
+  journaltitle = {Scientific Reports},
+  shortjournal = {Sci Rep},
+  volume = {13},
+  number = {8162},
+  publisher = {{Nature Publishing Group}},
+  issn = {2045-2322},
+  doi = {10.1038/s41598-023-35230-4},
+  issue = {1},
+  langid = {english},
+  keywords = {Biomarkers,Computational science,Computer science,Macular degeneration},}
 }
 ```
