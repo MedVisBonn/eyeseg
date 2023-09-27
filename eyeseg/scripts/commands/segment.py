@@ -82,18 +82,16 @@ def segment(ctx: click.Context, model_id, drusen_threshold):
             output_dir = output_path / path.relative_to(input_path).parent
             output_dir.mkdir(parents=True, exist_ok=True)
 
-            layers = [l.split("_")[0] for l in data.layers]
-            if "RPE" in layers and "BM" in layers:
-                rpe_name = list(data.layers.keys())[layers.index("RPE")]
-                bm_name = list(data.layers.keys())[layers.index("BM")]
-                logger.debug("Predicting drusen")
-                drusen = ep.drusen(
-                    data.layers[rpe_name],
-                    data.layers[bm_name],
-                    data.shape,
-                    minimum_height=drusen_threshold,
-                )
-                data.add_pixel_annotation(drusen, name="drusen")
+            rpe_name = f"RPE_{model_id}"
+            bm_name = f"BM_{model_id}"
+            logger.debug("Predicting drusen")
+            drusen = ep.drusen(
+                data.layers[rpe_name],
+                data.layers[bm_name],
+                data.shape,
+                minimum_height=drusen_threshold,
+            )
+            data.add_pixel_annotation(drusen, name="drusen")
 
             logger.debug("Saving data")
             data.save(output_dir / (path.name + ".eye"))
