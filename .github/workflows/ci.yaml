@@ -14,5 +14,3 @@ jobs:
   Release:
     if: github.repository == 'MedVisBonn/eyeseg'
     uses: MedVisBonn/eyeseg/.github/workflows/_release.yaml@main
-    secrets:
-      PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
