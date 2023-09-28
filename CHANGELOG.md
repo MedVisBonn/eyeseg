@@ -2,6 +2,13 @@
 
 
 
+## v1.0.2 (2023-09-28)
+
+### Fix
+
+* fix(pyproject.toml): downgrade to tensorflow 2.11 ([`81ca68a`](https://github.com/MedVisBonn/eyeseg/commit/81ca68a190480263112bdb50533d26302af2ef64))
+
+
 ## v1.0.1 (2023-09-27)
 
 ### Build
