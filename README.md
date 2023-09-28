@@ -27,11 +27,11 @@ Running eyeseg in a docker container on mounted data only requires a working doc
 
 For CPU only support, you can use the CPU image:
 ```bash
-docker run -u $(id -u):$(id -g) -it -v $DATA:/home/data olcifer/eyeseg:1.0.0-cpu
+docker run -u $(id -u):$(id -g) -it -v $DATA:/home/data olcifer/eyeseg:1.0.2-cpu
 ```
 For GPU support, you can use the GPU image:
 ```bash
-docker run -u $(id -u):$(id -g) -it --gpus=all -v $DATA:/home/data olcifer/eyeseg:1.0.0-gpu
+docker run -u $(id -u):$(id -g) -it --gpus=all -v $DATA:/home/data olcifer/eyeseg:1.0.2-gpu
 ```
 
 In both cases you need to mount your data to the container by replacing $DATA with the path to your data. Depending on whether you want to use a prebuild image or not you have to adapt the image name. The container will run as the current user and group. This is important to avoid permission issues with the mounted data. Your working directory is your mounted data. If you just run `eyeseg segment` all volumes in the mounted folder and subfolders are processed and stored under a parent folder called `processed/`.
